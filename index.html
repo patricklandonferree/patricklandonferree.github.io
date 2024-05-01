@@ -4,32 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .profile {
+            display: flex;
+            margin-top: 20px;
+            width: 80%;
+            align-items: center;
+        }
+        .profile img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .profile-content {
+            flex-grow: 1;
+        }
+        footer {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Your Name</h1>
+        <a href="mailto:your.email@example.com">Contact Me</a>
     </header>
-    <section>
-        <img src="photo.jpeg" alt="Your Name" style="width:200px;height:auto;">
-        <p>
-            I am a PhD student at Medical Museion (a medical history museum at the University of Copenhagen) 
-            and the Novo Nordisk Foundation Center for Basic Metabolic Research (CBMR). 
-            I have a background in chemistry and philosophy, a PhD in cell biology, and postdoc experience in exposure science. 
-            Now I am pursuing a career in history and philosophy of science. 
-            My research interests are in history of 20th-century and contemporary biomedical sciences.
-        </p>
-    </section>
-    <section>
-        <h2>Publications</h2>
-        <ul>
-            <li><a href="link_to_publication_1">Publication Title 1</a></li>
-            <li><a href="link_to_publication_2">Publication Title 2</a></li>
-            <li><a href="link_to_publication_3">Publication Title 3</a></li>
-            <!-- Add more links as needed -->
-        </ul>
-    </section>
+    <div class="profile">
+        <img src="photo.jpeg" alt="Your Name">
+        <div class="profile-content">
+            <p>
+                Write a paragraph about yourself here. You might include your professional background,
+                interests, and any relevant achievements or projects you would like to highlight.
+            </p>
+            <a href="link_to_your_cv.pdf">Download My CV</a>
+        </div>
+    </div>
     <footer>
-        <p>Contact me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
