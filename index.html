@@ -9,8 +9,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: salmon;
-            color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,37 +18,29 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
-            background-color: salmon; /* Updated color */
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .profile {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 80%;
             margin-top: 20px;
+            width: 80%;
+            align-items: center;
         }
         .profile img {
             width: 200px;
             height: auto;
+            margin-right: 20px;
         }
-        .profile-content, .profile-link {
-            text-align: center;
-            width: 100%;
+        .profile-content {
+            flex-grow: 1;
         }
         footer {
             margin-top: 20px;
             width: 100%;
             text-align: center;
             padding: 10px;
-            background-color: salmon; /* Updated color */
-        }
-        a {
-            color: #4A90E2;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
@@ -66,9 +56,7 @@
                 Write a paragraph about yourself here. You might include your professional background,
                 interests, and any relevant achievements or projects you would like to highlight.
             </p>
-        </div>
-        <div class="profile-link">
-            <a href="cv.pdf">Download My CV</a>
+            <a href="link_to_your_cv.pdf">Download My CV</a>
         </div>
     </div>
     <footer>
@@ -76,3 +64,4 @@
     </footer>
 </body>
 </html>
+
