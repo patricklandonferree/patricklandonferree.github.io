@@ -23,18 +23,20 @@
         }
         .profile {
             display: flex;
-            flex-direction: column; /* Change to column layout */
-            align-items: center; /* Center align items for column layout */
+            flex-direction: column;
+            align-items: center;
             margin-top: 20px;
             width: 80%;
         }
         .profile img {
             width: 200px;
             height: auto;
-            margin-bottom: 20px; /* Added bottom margin for spacing */
+            margin-bottom: 20px;
         }
-        .profile-content {
-            text-align: center; /* Center-align the text */
+        .profile-content, .education {
+            width: 100%;
+            text-align: left; /* Align text to the left */
+            padding-left: 20px; /* Add padding to align text nicely inside the div */
         }
         footer {
             margin-top: 20px;
@@ -59,10 +61,16 @@
             </p>
             <a href="patrickferreeCV2024.pdf">Here is a copy of my CV.</a>
         </div>
+        <div class="education">
+            <h2>Education</h2>
+            <p>PhD Student, Philosophy of Science, University of Copenhagen</p>
+            <p>PhD in Cell Biology, Duke</p>
+            <p>BA in Philosophy, UCSD</p>
+            <p>BS in Chemistry, UCSD</p>
+        </div>
     </div>
     <footer>
         <p></p>
     </footer>
 </body>
 </html>
-
