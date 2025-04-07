@@ -1,78 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-UK">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Patrick Ferree</title>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+    <link rel="icon" href="MyIcon.ico" type="image/x-icon" sizes="16x16">
+
     <style>
         body {
-            font-family: Garamond;
+            font-family: 'Benne', serif;
+            background-color: #ffffff;
+            width: 600pt;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2cm;
+        }
+
+        h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-style: normal;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: 22px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        br {
+            line-height: 150%;
+        }
+
+        ul.a {
+            list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
-        header {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        li.a {
+            display: inline;
+            margin: 0 10px;
         }
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-            width: 80%;
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
         }
-        .profile img {
-            width: 200px;
-            height: auto;
-            margin-bottom: 20px;
+
+        .column1 {
+            float: left;
+            width: 70%;
+            padding: 0px;
         }
-        .profile-content, .education {
-            width: 100%;
-            text-align: left; /* Align text to the left */
-            padding-left: 20px; /* Add padding to align text nicely inside the div */
+
+        .column2 {
+            float: left;
+            width: 30%;
+            padding: 0px;
         }
+
         footer {
             margin-top: 20px;
             width: 100%;
             text-align: center;
             padding: 10px;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
+
 <body>
-    <header>
-    </header>
-    <div class="profile">
-        <img src="photo.jpeg" alt="Your Name">
-        <div class="profile-content">
+
+    <hr width="100%">
+    <h1>Patrick Ferree</h1>
+    <hr width="100%">
+
+    <br>
+
+    <p align="center">
+        <ul class="a">
+            <li class="a"><a href="research.html"><font style="letter-spacing: 1px">RESEARCH</font></a></li>
+            <li class="a"><a href="teaching.html"><font style="letter-spacing: 1px">TEACHING</font></a></li>
+            <li class="a"><a href="cv.html"><font style="letter-spacing: 1px">CV</font></a></li>
+            <!-- Add more navigation links here -->
+        </ul>
+    </p>
+
+    <div class="row">
+        <div class="column2"><br><img src="photo.jpeg" alt="Patrick Ferree" style="height:90%;width:90%"></div>
+        <div class="column1">
             <p>
-                Hi! I'm Patrick. 
-            </p>
-            <p>
+                Hi! I'm Patrick.
+                <br><br>
                 I'm an interdisciplinary researcher working across philosophy, history, and anthropology of the biomedical sciences.
+                <br><br>
+                A copy of my CV is available <a href="patrickferreeCV2025.pdf">here</a>.
             </p>
-            <a href="patrickferreeCV2025.pdf">Here is a copy of my CV.</a>
-     <!--    
         </div>
-        <div class="education">
-            <h2>Education</h2>
-            <p>PhD student in science studies, UCPH</p>
-            <p>PhD in developmental biology (<a href="https://dukespace.lib.duke.edu/items/a4987bb3-7113-41c0-95eb-c62b3673a6a1">thesis</a>), Duke</p>
-            <p>BA in philosophy, UCSD </p>
-            <p>BS in chemistry, UCSD </p>
-        </div> 
     </div>
-    <footer>
-        <p></p>
-    </footer>
-            -->
+
+    <br><br>
+
+    <!-- Optional Education Section -->
+    <!--
+    <h2>Education</h2>
+    <p>PhD student in Science Studies, University of Copenhagen</p>
+    <p>PhD in Developmental Biology (<a href="https://dukespace.lib.duke.edu/items/a4987bb3-7113-41c0-95eb-c62b3673a6a1">thesis</a>), Duke</p>
+    <p>BA in Philosophy, UCSD</p>
+    <p>BS in Chemistry, UCSD</p>
+    -->
+
+    <hr width="100%">
+    <p class="line">
+        <i>E-mail</i>: patrick.ferree&#64email.com <br>
+        <i>Mail</i>: Department of [Affiliation], [University], [Address Line 1], [City], [Postcode].
+    </p>
+
 </body>
+
 </html>
+
