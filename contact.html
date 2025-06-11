@@ -7,15 +7,31 @@
     <style>
         body {
             font-family: 'Benne', serif;
+            background-color: #fff;
             max-width: 600px;
             margin: 2cm auto;
             padding: 0 1em;
         }
 
+        h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            margin-top: 0.2em;
+            font-size: 16px;
+        }
+
         ul.nav {
-            list-style: none;
+            list-style-type: none;
+            margin: 1em 0;
             padding: 0;
-            margin: 0 0 20px 0;
             text-align: center;
         }
 
@@ -30,15 +46,24 @@
             color: #333;
         }
 
-        p {
+        #main-content {
+            margin-top: 20px;
             font-size: 16px;
             line-height: 1.5;
+        }
+
+        .label {
+            font-style: italic;
         }
     </style>
 </head>
 <body>
 
-    <h1>Contact</h1>
+    <hr>
+    <h1>Patrick Ferree</h1>
+    <div class="subtitle">Philosophy of the biomedical sciences</div>
+    <hr>
+
     <ul class="nav">
         <li class="nav"><a href="index.html">Home</a></li>
         <li class="nav"><a href="about.html">About Me</a></li>
@@ -46,8 +71,18 @@
         <li class="nav"><a href="contact.html">Contact</a></li>
     </ul>
 
-    <p><i>Email</i>: patrick.ferree&#64;sund.ku.dk</p>
-    <p><i>Mail</i>: Medical Museion, Fredericiagade 18, Copenhagen K, Denmark.</p>
+    <div id="main-content">
+        <p><span class="label">Email</span>: patrick.ferree&#64;sund.ku.dk</p>
+
+        <p><span class="label">Mail</span>:<br>
+            Medical Museion<br>
+            Fredericiagade 18<br>
+            Copenhagen K<br>
+            Denmark
+        </p>
+    </div>
+
+    <hr>
 
 </body>
 </html>
