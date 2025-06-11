@@ -39,7 +39,7 @@
 
         ul.nav {
             list-style-type: none;
-            margin: 0;
+            margin: 1em 0;
             padding: 0;
             text-align: center;
         }
@@ -49,8 +49,24 @@
             margin: 0 10px;
         }
 
+        li.nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        li.nav a:hover {
+            text-decoration: underline;
+        }
+
         #photo-container {
             text-align: center;
+        }
+
+        #photo-container img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 8px;
         }
 
         #about-text {
@@ -72,7 +88,8 @@
 
     <script>
         function showAbout() {
-            document.getElementById("about-text").style.display = "block";
+            var about = document.getElementById("about-text");
+            about.style.display = "block";
         }
     </script>
 </head>
@@ -84,16 +101,16 @@
     <div class="subtitle">Philosophy of the biomedical sciences</div>
     <hr>
 
-    <div id="photo-container">
-        <img src="photo 2.JPG" alt="Patrick Ferree" style="width:90%; max-width:250px; border-radius: 8px;">
-    </div>
-
-    <br>
-
+    <!-- Navigation links moved above the photo -->
     <ul class="nav">
         <li class="nav"><a href="#" onclick="showAbout(); return false;">About Me</a></li>
         <li class="nav"><a href="patrickferreeCV2025.pdf" target="_blank">Curriculum Vitae</a></li>
     </ul>
+
+    <!-- Wider photo container -->
+    <div id="photo-container">
+        <img src="photo 2.JPG" alt="Patrick Ferree">
+    </div>
 
     <div id="about-text">
         <p>
@@ -113,6 +130,7 @@
 </body>
 
 </html>
+
 
 
 
