@@ -7,16 +7,32 @@
     <style>
         body {
             font-family: 'Benne', serif;
+            background-color: #fff;
             max-width: 600px;
             margin: 2cm auto;
             padding: 0 1em;
+        }
+
+        h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
             text-align: center;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            margin-top: 0.2em;
+            font-size: 16px;
         }
 
         ul.nav {
-            list-style: none;
+            list-style-type: none;
+            margin: 1em 0;
             padding: 0;
-            margin: 0 0 20px 0;
+            text-align: center;
         }
 
         li.nav {
@@ -30,7 +46,11 @@
             color: #333;
         }
 
-        img {
+        #photo-container {
+            text-align: center;
+        }
+
+        #photo-container img {
             width: 100%;
             max-width: 100%;
             border-radius: 8px;
@@ -39,7 +59,11 @@
 </head>
 <body>
 
+    <hr>
     <h1>Patrick Ferree</h1>
+    <div class="subtitle">Philosophy of the biomedical sciences</div>
+    <hr>
+
     <ul class="nav">
         <li class="nav"><a href="index.html">Home</a></li>
         <li class="nav"><a href="about.html">About Me</a></li>
@@ -47,7 +71,9 @@
         <li class="nav"><a href="contact.html">Contact</a></li>
     </ul>
 
-    <img src="photo 2.JPG" alt="Patrick Ferree">
+    <div id="photo-container">
+        <img src="photo 2.JPG" alt="Patrick Ferree">
+    </div>
 
 </body>
 </html>
